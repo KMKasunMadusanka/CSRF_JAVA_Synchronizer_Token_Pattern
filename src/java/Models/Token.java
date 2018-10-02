@@ -1,13 +1,7 @@
 package Models;
-
 import java.util.Date;
 import java.util.HashMap;
 
-
-/**
- *
- * @author User
- */
 public class Token {
 
     private static String csrf;
@@ -39,7 +33,5 @@ public class Token {
     public void setSessionMap() {
         Token.sessionMap.put(this.sesssion, this.csrf);
     }
-    
-
     
 }

@@ -1,10 +1,6 @@
 package servlet;
-
 import Models.Token;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,7 +25,7 @@ public class ValidateData_syncronizeToken extends HttpServlet {
             if (m.getKey().equals(currentSID)) {
 
                 if (request.getParameter("csrf").equals(m.getValue())) { 
-                    session.setAttribute("result_value", "Your responce has been ensured with CSRF sysncronize token pattern!");
+                    session.setAttribute("result_value", "Your response has been ensured with CSRF synchronize token pattern!");
 
                 } else {
                     session.setAttribute("result_value", "Your responce is recoded but not ensured with CSRF");
@@ -41,10 +37,4 @@ public class ValidateData_syncronizeToken extends HttpServlet {
         response.sendRedirect("result.jsp");
 
     }
-
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-
 }

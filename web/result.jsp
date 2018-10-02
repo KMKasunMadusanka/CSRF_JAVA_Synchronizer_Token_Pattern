@@ -1,4 +1,3 @@
-    
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -33,8 +32,5 @@
             <div class="msg"> ${result_value}</div>
             <a type="button" class="btn btn-info" href="http://localhost:8080/csrfDemo/">Home</a>
         </div>
-
-        
-        
     </body>
 </html>

@@ -1,4 +1,4 @@
-package servlet;
+    package servlet;
 
 import Models.Token;
 import java.io.IOException;
@@ -24,7 +24,7 @@ public class login extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        if (username.equals("abc") && password.equals("123")) {
+        if (username.equals("admin") && password.equals("admin")) {
 
             Cookie[] cookies = request.getCookies();
             if (cookies != null) {
