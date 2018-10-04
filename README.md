@@ -9,7 +9,7 @@ Follow bellow steps to run this demo :
 * get the .WAR file which is created in the Build folder
 * deployee the WAR file in a Tomcat -> Webapps folder and run the tomcat.
 
-### used technologies
+### Used technologies
 - Java JSP and Servlet
 - HTML and CSS
 
